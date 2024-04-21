@@ -1,0 +1,26 @@
+# Visual Studio generated files
+*.suo
+*.user
+*.sln.docstates
+.vs/
+*.vscode/
+*.vssscc
+.vssettings
+[Bb]in/
+[Oo]bj/
+*[Ll]og/
+
+# Node.js generated files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Backend specific
+Backend/bin/
+Backend/obj/
+Backend/appsettings.json
+
+# Frontend specific
+frontend/node_modules/
+frontend/obj/
+frontend/bin/

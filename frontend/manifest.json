@@ -1,0 +1,352 @@
+{
+  "contentTypes": [
+    {
+      "id": "ed70e2a6-1d80-4a51-9aa7-bb91609ccf1b",
+      "name": "ContentBlock",
+      "baseType": "Block",
+      "editSettings": {
+        "available": true,
+        "sortOrder": 0
+      },
+      "properties": [
+        {
+          "name": "Title",
+          "dataType": "PropertyLongString",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Title",
+            "groupName": "Information",
+            "sortOrder": 10
+          }
+        },
+        {
+          "name": "Image",
+          "dataType": "PropertyUrl",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Image",
+            "groupName": "Information",
+            "sortOrder": 10,
+            "hint": "Url"
+          }
+        },
+        {
+          "name": "ImageAlignment",
+          "dataType": "PropertyLongString",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Image Alignment",
+            "groupName": "Information",
+            "sortOrder": 10
+          }
+        },
+        {
+          "name": "Content",
+          "dataType": "PropertyXhtmlString",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Content",
+            "groupName": "Information",
+            "sortOrder": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "0a5b7b88-d0ec-4a2a-83d4-13a66d6d581d",
+      "name": "RecipeContainerPage",
+      "baseType": "Page",
+      "editSettings": {
+        "available": true,
+        "sortOrder": 0
+      },
+      "properties": []
+    },
+    {
+      "id": "9e98d26a-6f06-4c35-bfbd-8b850a0fa433",
+      "name": "RecipeDetailsPage",
+      "baseType": "Page",
+      "editSettings": {
+        "available": true,
+        "sortOrder": 0
+      },
+      "properties": [
+        {
+          "name": "RecipeName",
+          "dataType": "PropertyLongString",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Recipe Name",
+            "groupName": "Information",
+            "sortOrder": 10
+          }
+        },
+        {
+          "name": "RecipePhoto",
+          "dataType": "PropertyUrl",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Recipe Photo",
+            "groupName": "Information",
+            "sortOrder": 20,
+            "hint": "Url"
+          }
+        },
+        {
+          "name": "RecipeDescription",
+          "dataType": "PropertyXhtmlString",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Recipe Description",
+            "groupName": "Information",
+            "sortOrder": 30,
+            "helpText": "Description to appear on the Recipe detail page."
+          }
+        },
+        {
+          "name": "RecipeType",
+          "dataType": "PropertyLongString",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Recipe Type",
+            "groupName": "Information",
+            "sortOrder": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "a736bc13-d17c-46e2-ad5d-e37bd3af086b",
+      "name": "ImageFile",
+      "baseType": "Image",
+      "supportedMediaExtensions": "jpg,jpeg,jpe,ico,gif,png",
+      "properties": []
+    },
+    {
+      "id": "46278700-3173-4945-b143-befe071f0f71",
+      "name": "LandingPage",
+      "baseType": "Page",
+      "editSettings": {
+        "available": true,
+        "sortOrder": 0
+      },
+      "properties": [
+        {
+          "name": "HeroImage",
+          "dataType": "PropertyUrl",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Hero Image",
+            "groupName": "Information",
+            "sortOrder": 10,
+            "hint": "Url"
+          }
+        },
+        {
+          "name": "Title",
+          "dataType": "PropertyLongString",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Title",
+            "groupName": "Information",
+            "sortOrder": 20
+          }
+        },
+        {
+          "name": "Subtitle",
+          "dataType": "PropertyLongString",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Subtitle",
+            "groupName": "Information",
+            "sortOrder": 30
+          }
+        },
+        {
+          "name": "RecipeLink",
+          "dataType": "PropertyPageReference",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Link to Recipe list",
+            "groupName": "Information",
+            "sortOrder": 35
+          }
+        },
+        {
+          "name": "MainContentArea",
+          "dataType": "PropertyContentArea",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Main Content Area",
+            "groupName": "Information",
+            "sortOrder": 40
+          }
+        },
+        {
+          "name": "FooterContentArea",
+          "dataType": "PropertyContentArea",
+          "branchSpecific": true,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Footer Content Area",
+            "groupName": "Information",
+            "sortOrder": 50
+          }
+        }
+      ]
+    }
+  ],
+  "editorDefinitions": [
+    {
+      "dataType": "PropertyLongString",
+      "uiHint": "ValidatableTextarea",
+      "editor": "epi/shell/widget/ValidationTextarea",
+      "custom1": "Custom setting"
+    }
+  ],
+  "propertyGroups": [
+    {
+      "name": "Information",
+      "sortOrder": 10,
+      "systemGroup": true
+    },
+    {
+      "name": "Scheduling",
+      "sortOrder": 20,
+      "systemGroup": true
+    },
+    {
+      "name": "Advanced",
+      "sortOrder": 30,
+      "systemGroup": true
+    },
+    {
+      "name": "Shortcut",
+      "sortOrder": 40,
+      "systemGroup": true
+    },
+    {
+      "name": "Categories",
+      "sortOrder": 50,
+      "systemGroup": true
+    },
+    {
+      "name": "DynamicBlocks",
+      "sortOrder": 60,
+      "systemGroup": true
+    }
+  ],
+  "languageBranches": [
+    {
+      "name": "en",
+      "displayName": "English",
+      "urlSegment": "en",
+      "sortOrder": 10,
+      "enabled": true
+    },
+    {
+      "name": "en-GB",
+      "displayName": "English (United Kingdom)",
+      "urlSegment": "en-GB",
+      "sortOrder": 20,
+      "enabled": false
+    },
+    {
+      "name": "sv",
+      "displayName": "Svenska",
+      "urlSegment": "sv",
+      "sortOrder": 20,
+      "enabled": true
+    },
+    {
+      "name": "en-NZ",
+      "displayName": "English (New Zealand)",
+      "urlSegment": "en-NZ",
+      "sortOrder": 30,
+      "enabled": false
+    },
+    {
+      "name": "en-ZA",
+      "displayName": "English (South Africa)",
+      "urlSegment": "en-ZA",
+      "sortOrder": 40,
+      "enabled": false
+    },
+    {
+      "name": "de",
+      "displayName": "Deutsch",
+      "urlSegment": "de",
+      "sortOrder": 50,
+      "enabled": false
+    },
+    {
+      "name": "fr",
+      "displayName": "français",
+      "urlSegment": "fr",
+      "sortOrder": 60,
+      "enabled": false
+    },
+    {
+      "name": "es",
+      "displayName": "español",
+      "urlSegment": "es",
+      "sortOrder": 70,
+      "enabled": false
+    },
+    {
+      "name": "no",
+      "displayName": "norsk",
+      "urlSegment": "no",
+      "sortOrder": 90,
+      "enabled": false
+    },
+    {
+      "name": "da",
+      "displayName": "dansk",
+      "urlSegment": "da",
+      "sortOrder": 100,
+      "enabled": false
+    },
+    {
+      "name": "fi",
+      "displayName": "suomi",
+      "urlSegment": "fi",
+      "sortOrder": 110,
+      "enabled": false
+    },
+    {
+      "name": "nl",
+      "displayName": "Nederlands",
+      "urlSegment": "nl",
+      "sortOrder": 120,
+      "enabled": false
+    },
+    {
+      "name": "nl-BE",
+      "displayName": "Nederlands (België)",
+      "urlSegment": "nl-BE",
+      "sortOrder": 130,
+      "enabled": false
+    },
+    {
+      "name": "pt-BR",
+      "displayName": "português (Brasil)",
+      "urlSegment": "pt-BR",
+      "sortOrder": 140,
+      "enabled": false
+    }
+  ]
+}
