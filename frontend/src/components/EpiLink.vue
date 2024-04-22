@@ -4,7 +4,16 @@
     disable Vue router. That's needed to get context changes to work, such as
     updating the page navigation tree.
 -->
-
+<style>
+.navURL {
+  position: absolute;
+  top: 30px;
+  right: 106px;
+  color: black;
+  font-size: large;
+  background-color: lightblue;
+}
+</style>
 <template>
   <router-link v-if="userRouterLink" class="EPiLink" :to="clientUrl" :class="className">
     <slot></slot>

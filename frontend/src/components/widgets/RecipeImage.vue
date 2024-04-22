@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style>
 .artistImage {
     padding-top: 80px;
 }

@@ -47,21 +47,24 @@
         <div class="Page-container">
             <div class="recipe-details">
                 <div class="recipe-header">
+                    <h1 class="recipe-name">{{ model.name }}</h1>
+                    <EpiProperty property-name="name" />
+
+
+                    <p class="recipe-type">{{ model.recipeType }}</p>
+                    <EpiProperty property-name="recipeType" />
+
                     <RecipeImage :name="model.name" :image-url="model.recipePhoto" />
                     <EpiProperty property-name="recipePhoto" />
-                    <h1 class="recipe-name">{{ model.name }}</h1>
 
-                    <EpiProperty property-name="name" />
-                    <p class="recipe-type">{{ model.recipeType }}</p>
+                    <div class="recipe-description">
+                        <p v-html="model.recipeDescription"></p>
 
-                    <EpiProperty property-name="recipeType" />
+                        <EpiProperty property-name="recipeDescription" />
+                    </div>
                 </div>
 
-                <div class="recipe-description">
-                    <p v-html="model.recipeDescription"></p>
 
-                    <EpiProperty property-name="recipeDescription" />
-                </div>
             </div>
         </div>
 

@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style>
 .backButton {
     z-index: 10;
     height: 50px;
