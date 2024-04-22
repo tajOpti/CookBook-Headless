@@ -10,6 +10,7 @@
             <LanguageSelector :existingLanguages="model.existingLanguages" :language="model.language" />
         </nav>
 
+        <img src="" alt="">
         <IntroductionBanner :title="model.title" :subtitle="model.subtitle" :heroimage="model.heroImage" />
 
         <EpiLink :class-name="'navURL'" :url="model.recipeLink.expanded.url">
@@ -32,7 +33,7 @@
         </main>
 
 
-        <footer>
+        <footer style="height: 35vh">
             <div v-epi-edit="'FooterContentArea'">
                 <ContentArea :model="model.footerContentArea" />
             </div>
@@ -62,6 +63,7 @@ export default {
     methods: mapMutations({
         updateContext: UPDATE_CONTEXT,
     }),
+
     // computed: {
     //     // Extracting properties from model
     //     existingLanguages() {
@@ -160,15 +162,15 @@ body {
 
 /* Style for the footer */
 footer {
-    background-color: #f2f2f2;
-    padding: 20px 0;
+    background-color: bisque;
+    padding: 0.5vh 0;
     text-align: center;
 }
 
 .FooterBottom {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 1.5vh 0;
 }
 
 .FooterBottom h6 {
@@ -189,11 +191,16 @@ footer {
 /* Style for the image */
 .ConditionalImage {
 
-    height: auto;
+    /* height: auto;
     display: block;
     margin-right: 11px;
     margin-left: 85px;
-    width: 425px;
+    width: 595px; */
+    height: 26vh;
+    display: block;
+    margin-right: 11px;
+    margin-left: 85px;
+    width: 42vh;
 }
 
 /* Style for the text */
@@ -208,5 +215,57 @@ footer {
 
 .Page-container.ContentBlock p {
     margin-bottom: 10px;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-sections {
+    display: flex;
+}
+
+.footer-section {
+    margin-right: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
 }
 </style>

@@ -6,7 +6,7 @@
 -->
 
 <template>
-  <img class="ConditionalImage" v-if="src" :src="src" :alt="alt" />
+  <img class="ConditionalImage width" v-if="src" :src="src" :alt="alt" />
 </template>
 
 <script>
@@ -14,3 +14,13 @@ export default {
   props: ['alt', 'src'],
 };
 </script>
+
+<style>
+.ConditionalImage {
+  width: 600px;
+}
+
+.width {
+  width: 70%;
+}
+</style>

@@ -8,9 +8,7 @@
 .navURL {
   position: absolute;
   top: 30px;
-  right: 106px;
-  color: black;
-  font-size: large;
+  right: 115px;
   background-color: lightblue;
 }
 </style>

@@ -12,13 +12,10 @@
 
 <template>
   <section class="Grid Grid--alignMiddle Grid--gutterA ContentArea">
-      <div v-for="(block, index) in model"
-           class="Grid-cell"
-           :class="getDisplayOption(block.displayOption)"
-           :data-epi-content-id="isEditable ? block.contentLink.guidValue : null"
-           :key="index">
-          <BlockComponentSelector :model="block.contentLink.expanded" />
-      </div>
+    <div v-for="(block, index) in model" class="Grid-cell" :class="getDisplayOption(block.displayOption)"
+      :data-epi-content-id="isEditable ? block.contentLink.guidValue : null" :key="index">
+      <BlockComponentSelector :model="block.contentLink.expanded" />
+    </div>
   </section>
 </template>
 

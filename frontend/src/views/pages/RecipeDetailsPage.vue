@@ -141,6 +141,9 @@ export default {
     @media (min-width:768px) {
         margin: 0;
     }
+
+    height: 49vh;
+
 }
 
 .FooterBottom {

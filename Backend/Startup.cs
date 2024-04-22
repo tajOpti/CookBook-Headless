@@ -1,4 +1,5 @@
-﻿using EPiServer.Cms.Shell;
+﻿using CookBook.Backend.Infrastructure.ServiceCollections;
+using EPiServer.Cms.Shell;
 using EPiServer.Cms.UI.AspNetIdentity;
 using EPiServer.ContentApi.Cms;
 using EPiServer.ContentApi.Core.DependencyInjection;
@@ -28,6 +29,7 @@ public class Startup
             .AddAdminUserRegistration()
             .AddEmbeddedLocalization<Program>()
             .ConfigureForExternalTemplates()
+            .AddTinyMceConfigs()
             .Configure<ExternalApplicationOptions>(options => options.OptimizeForDelivery = true)
             .Configure<DisplayOptions>(options =>
             {

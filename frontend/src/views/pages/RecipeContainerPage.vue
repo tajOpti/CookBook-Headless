@@ -37,7 +37,7 @@
       </div>
     </div> -->
 
-    <footer>
+    <footer style="margin-top: 65vh">
       <div class="FooterBottom">
         <h6>&copy; Cook Book 2024!!</h6>
       </div>
@@ -107,7 +107,7 @@ h3 {
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-  background: rgba(236, 64, 122, .24);
+  background: peachpuff;
   padding: 5px 0 7px;
   margin: 0;
 }
