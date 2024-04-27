@@ -4,6 +4,9 @@ import EpiEdit from './directives/epiEdit';
 import router from './router';
 import store from './store';
 
+
+console.log("this is in main.js before mounting the app", window)
+
 const app = createApp(App)
     .directive('epi-edit', EpiEdit)
     .use(store)

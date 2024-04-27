@@ -40,6 +40,7 @@ window.addEventListener('load', () => {
   }
 
   if (window.epi.ready === true) {
+    console.log(window.epi);
     setContext();
   } else if (window.epi.subscribe) {
     window.epi.subscribe('epiReady', () => setContext());

@@ -67,6 +67,28 @@
       "properties": []
     },
     {
+      "id": "4BB9821C-75C1-4206-8051-C24A64FB252E",
+      "name": "TestPage",
+      "baseType": "Page",
+      "editSettings": {
+        "available": true,
+        "sortOrder": 0
+      },
+      "properties": [
+        {
+          "name": "Test",
+          "dataType": "PropertyLongString",
+          "branchSpecific": false,
+          "editSettings": {
+            "visibility": "default",
+            "displayName": "Test Name",
+            "groupName": "Information",
+            "sortOrder": 10
+          }
+        }
+      ]
+    },
+    {
       "id": "9e98d26a-6f06-4c35-bfbd-8b850a0fa433",
       "name": "RecipeDetailsPage",
       "baseType": "Page",

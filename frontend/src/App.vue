@@ -48,6 +48,7 @@ export default {
     },
   },
   mounted() {
+    console.log("check window on mounted ", window);
     defaultConfig.apiUrl = `${process.env.VUE_APP_CONTENT_DELIVERY_API}/api/episerver/v3.0`;
     defaultConfig.getAccessToken = () => authService.getAccessToken();
     defaultConfig.selectAllProperties = true;
